@@ -8,10 +8,8 @@ _November 6th, 2017_
 In this project a labeled dataset (set of images collected from the Sentinel-1 satellite and labeled manually) is used to train a binary classification model which can predict if there is iceberg(s) in new observations or not.
 
 ### Domain Background
-The Sentinel-1 satellite sends a signal to an object and collect the echo referred to as backscatter which is then converted to an image. The backscatters from any solid objects such as ship, iceberg, and land is stronger than that from water, making it possible to distinguish between solid objects from water. In fact, solid objects in the resultant images appear brighter than their surrounding (water).
-The emitted signals from the satellite always hit the objects horizontally, but the backscatters are received either horizontally or vertically. Hence, two sets of information (images) are obtained from objects; the first set here is referred to as HH (transmit/receive horizontally) which corresponds to the horizontal backscatters and the second set is HV (transmit horizontally and receive vertically) which corresponds to the vertical backscatters.
-
-In this section, provide brief details on the background information of the domain from which the project is proposed. Historical information relevant to the project should be included. It should be clear how or why a problem in the domain can or should be solved. Related academic research should be appropriately cited in this section, including why that research is relevant. Additionally, a discussion of your personal motivation for investigating a particular problem in the domain is encouraged but not required.
+The Sentinel-1 satellite sends a signal to an object and collect the echo referred to as backscatter which is then converted to an image. The backscatters from any solid objects such as ship, iceberg, and land is stronger than that from water, making it possible to distinguish between solid objects and water. In fact, solid objects in the resultant images appear brighter than their surrounding (water).
+The emitted signals from the satellite always hit the objects horizontally, but the backscatters are received either horizontally or vertically. Hence, two sets of information (images) are obtained from objects; the first set, here referred to as HH (transmit/receive horizontally), corresponds to the horizontal backscatters and the second set, referred to as HV (transmit horizontally and receive vertically), corresponds to the vertical backscatters.
 
 ### Problem Statement
 This is a binary classification project and the challenge is to predict the label of every image as 1 (if there is iceberg(s) in the image) or 0 (if the detected objects corresponds only to Ship(s)).
@@ -33,7 +31,7 @@ In the following images, two samples of the train datasets are shown.
 
 [kaggle competition](https://www.kaggle.com/c/statoil-iceberg-classifier-challenge#Background)
 
-As obvious, the HH images of both iceberg and ship show bright solid objects. However,  the HV images differ significantly; the ship HV image shows a bright object as well as its HH image does, but iceberg HV image hardly shows the presence of a solid object. Here, we try to construct a Convolutional Neural Network (CNN) that can capture this difference.
+As obvious, the HH images of both iceberg and ship show bright solid objects. However, the HV images differ significantly; the ship HV image shows a bright object as well as its HH image does, but the iceberg HV image hardly shows the presence of a solid object. Here, we try to construct a Convolutional Neural Network (CNN) that can capture this difference.
 
 ### Benchmark Model
 The following image shows the benchmark CNN model architecture.
