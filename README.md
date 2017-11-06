@@ -17,10 +17,12 @@ This is a binary classification project and the challenge is to predict the labe
 
 ### Datasets and Inputs
 This project is an ongoing [kaggle competition](https://www.kaggle.com/c/statoil-iceberg-classifier-challenge#background) (at the time of this proposal submission) and the data is given in json format. There are train and test datasets. The datasets have the following fields:
-1. id: the image id
-2. band_1, band_2: the flattened image data corresponding to HH and HV respectively each with 5625 elements (75x75 pixels)
-3. inc_angle: the incident angles of which the image was taken
-4. is_iceberg: the train dataset labels which is either 1 (if there is iceberg(s) in the image) or 0 (if the detected objects corresponds only to Ship(s))
+
+  1. id: the image id
+  2. band_1, band_2: the flattened image data corresponding to HH and HV respectively each with 5625 elements (75x75 pixels)
+  3. inc_angle: the incident angles of which the image was taken
+  4. is_iceberg: the train dataset labels which is either 1 (if there is iceberg(s) in the image) or 0 (if the detected objects corresponds only to Ship(s))
+
 The band_1 and band_2 fields have dB unit. The is_iceberg field only exists in the train dataset.
 
 ### Solution Statement
