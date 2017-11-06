@@ -29,6 +29,7 @@ The band_1 and band_2 fields have dB unit. The is_iceberg field only exists in t
 In the following images, two samples of the train datasets are shown.
 
 ![alt text](./images/img_1.png)
+[kaggle competition](https://www.kaggle.com/c/statoil-iceberg-classifier-challenge#background)
 
 As obvious, the HH images of both iceberg and ship show bright solid objects. However,  the HV images differ significantly; the ship HV image shows a bright object as well as its HH image does, but iceberg HV image hardly shows the presence of a solid object. Here, we try to construct a Convolutional Neural Network (CNN) that can capture this difference.
 
@@ -38,21 +39,7 @@ The following image shows the benchmark CNN model architecture.
 ![alt text](./images/img_2.png)
 
 ### Evaluation Metrics
-_(approx. 1-2 paragraphs)_
-
-In this section, propose at least one evaluation metric that can be used to quantify the performance of both the benchmark model and the solution model. The evaluation metric(s) you propose should be appropriate given the context of the data, the problem statement, and the intended solution. Describe how the evaluation metric(s) are derived and provide an example of their mathematical representations (if applicable). Complex evaluation metrics should be clearly defined and quantifiable (can be expressed in mathematical or logical terms).
+The training dataset is divided into train and validation datasets and the model accuracy on the validation datasets will be used as the evaluation metric.
 
 ### Project Design
-_(approx. 1 page)_
-
-In this final section, summarize a theoretical workflow for approaching a solution given the problem. Provide thorough discussion for what strategies you may consider employing, what analysis of the data might be required before being used, or which algorithms will be considered for your implementation. The workflow and discussion that you provide should align with the qualities of the previous sections. Additionally, you are encouraged to include small visualizations, pseudocode, or diagrams to aid in describing the project design, but it is not required. The discussion should clearly outline your intended workflow of the capstone project.
-
------------
-
-**Before submitting your proposal, ask yourself. . .**
-
-- Does the proposal you have written follow a well-organized structure similar to that of the project template?
-- Is each section (particularly **Solution Statement** and **Project Design**) written in a clear, concise and specific fashion? Are there any ambiguous terms or phrases that need clarification?
-- Would the intended audience of your project be able to understand your proposal?
-- Have you properly proofread your proposal to assure there are minimal grammatical and spelling mistakes?
-- Are all the resources used for this project correctly cited and referenced?
+First, we try to improve the benchmark model and see if we can achieve better prediction performance by adjusting the layers. Then, bottleneck features of some known CNN architectures such as ResNet-50 and VGG-16 are also extracted and fed into a deep classifier to see how the prediction performance can be improved.
