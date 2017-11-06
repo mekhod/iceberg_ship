@@ -30,7 +30,7 @@ In the following images, two samples of the train datasets are shown.
 
 ![alt text](./images/img_1.png)
 
-[kaggle competition](https://www.kaggle.com/c/statoil-iceberg-classifier-challenge#background)
+[kaggle competition](https://www.kaggle.com/c/statoil-iceberg-classifier-challenge#Background)
 
 As obvious, the HH images of both iceberg and ship show bright solid objects. However,  the HV images differ significantly; the ship HV image shows a bright object as well as its HH image does, but iceberg HV image hardly shows the presence of a solid object. Here, we try to construct a Convolutional Neural Network (CNN) that can capture this difference.
 
