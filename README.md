@@ -26,12 +26,16 @@ This project is an ongoing [kaggle competition](https://www.kaggle.com/c/statoil
 The band_1 and band_2 fields have dB unit. The is_iceberg field only exists in the train dataset.
 
 ### Solution Statement
+In the following images, two samples of the train datasets are shown.
+
 ![alt text](./images/img_1.png)
 
-### Benchmark Model
-_(approximately 1-2 paragraphs)_
+As obvious, the HH images of both iceberg and ship show bright solid objects. However,  the HV images differ significantly; the ship HV image shows a bright object as well as its HH image does, but iceberg HV image hardly shows the presence of a solid object. Here, we try to construct a Convolutional Neural Network (CNN) that can capture this difference.
 
-In this section, provide the details for a benchmark model or result that relates to the domain, problem statement, and intended solution. Ideally, the benchmark model or result contextualizes existing methods or known information in the domain and problem given, which could then be objectively compared to the solution. Describe how the benchmark model or result is measurable (can be measured by some metric and clearly observed) with thorough detail.
+### Benchmark Model
+The following image shows the benchmark CNN model architecture.
+
+![alt text](./images/img_2.png)
 
 ### Evaluation Metrics
 _(approx. 1-2 paragraphs)_
