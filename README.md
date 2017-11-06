@@ -26,7 +26,7 @@ This project is an ongoing [kaggle competition](https://www.kaggle.com/c/statoil
 The band_1 and band_2 fields have dB unit. The is_iceberg field only exists in the train dataset.
 
 ### Solution Statement
-![alt text](https://github.com/mekhod/iceberg_ship/tree/master/images/img_1.png)
+![alt text](./images/img_1.png)
 
 ### Benchmark Model
 _(approximately 1-2 paragraphs)_
