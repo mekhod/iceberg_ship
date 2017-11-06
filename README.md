@@ -26,9 +26,7 @@ This project is an ongoing [kaggle competition](https://www.kaggle.com/c/statoil
 The band_1 and band_2 fields have dB unit. The is_iceberg field only exists in the train dataset.
 
 ### Solution Statement
-_(approx. 1 paragraph)_
-
-In this section, clearly describe a solution to the problem. The solution should be applicable to the project domain and appropriate for the dataset(s) or input(s) given. Additionally, describe the solution thoroughly such that it is clear that the solution is quantifiable (the solution can be expressed in mathematical or logical terms) , measurable (the solution can be measured by some metric and clearly observed), and replicable (the solution can be reproduced and occurs more than once).
+![alt text](https://github.com/mekhod/iceberg_ship/tree/master/images/img_1.png)
 
 ### Benchmark Model
 _(approximately 1-2 paragraphs)_
