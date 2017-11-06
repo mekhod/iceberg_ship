@@ -1,7 +1,8 @@
 # Machine Learning Engineer Nanodegree
 ## Capstone Proposal
 Mehdi Khodayari
-November 6th, 2017
+
+_November 6th, 2017_
 
 ## Proposal
 In this project a labeled dataset (set of images collected from the Sentinel-1 satellite and labeled manually) is used to train a binary classification model which can predict if there is iceberg(s) in new observations or not.
