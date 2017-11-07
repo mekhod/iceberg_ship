@@ -22,7 +22,7 @@ This project is an ongoing [kaggle competition](https://www.kaggle.com/c/statoil
   3. inc_angle: the incident angles of which the image was taken
   4. is_iceberg: the train dataset labels which is either 1 (if there is iceberg(s) in the image) or 0 (if the detected objects corresponds only to Ship(s))
 
-The band_1 and band_2 fields have dB unit. The is_iceberg field only exists in the train dataset.
+The band_1 and band_2 fields have dB unit and can be either negative or positive. The is_iceberg field only exists in the train dataset.
 
 ### Solution Statement
 In the following images, two samples of the train datasets are shown.
